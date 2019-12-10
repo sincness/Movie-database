@@ -49,7 +49,7 @@ let aC = (parent, child) => parent.appendChild(child)
      //proceed once the first promise is resolved.
      newfetched = await response.json()
      //proceed only when the second promise is resolved
-     let yid = newfetched.results[0].key
+     yid = newfetched.results[0].key
     
        iH(trailer, `<iframe width="640" height="360" src="https://www.youtube.com/embed/${yid}" frameborder="0" allow="accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="border-radius:15px; box-shadow: #00000040 1px 1px 10px 0px;"></iframe>`)
       
