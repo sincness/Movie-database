@@ -18,7 +18,7 @@
 <g id="Layer_1">
 	<g>
 		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="400" y1="0" x2="400" y2="300">
-			<stop  offset="5.692839e-02" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.2547" style="stop-color:#FFFFFF"/>
 			<stop  offset="1" style="stop-color:#666666"/>
 		</linearGradient>
 		<path class="st0" d="M0,0v227.5c0.2,0.5,0.3,1.2,0.3,1.9v16.7c1.1,18,2,35.9,1.7,53.9h267.5c0.7-0.4,1.4-0.6,2.4-0.6
