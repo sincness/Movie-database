@@ -1,0 +1,320 @@
+// @font-face {
+//     font-family: 'Trajan Pro';
+//     src: url('../fonts/TrajanPro-Regular.ttf') format('otf');
+//     src: url('../fonts/TrajanPro-Regular.ttf.tff') format('woff');
+//     src: url('../fonts/TrajanPro-Regular.ttf.ttf') format('otf');
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+body {
+    min-height: 100vh;
+    // min-width: 100vw;
+    background: #fff;
+    color: orangered;
+    
+
+    background-repeat: no-repeat;
+
+    header {
+        background-image: url(../img/christmasandchill.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 100%;
+        height: 43rem;
+        
+        .container {
+            position: absolute;
+            top: 22%;
+            left: 70%;
+            button, input {
+                font-size: 1em;
+                display: inline-block;
+                padding: .8em;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+                outline: none;
+        
+            }
+            
+            .btn:hover {
+                background: rgb(255, 255, 255);
+                color: black;
+                box-shadow: 0 0 10px rgba(255,255,255,.5);
+                mix-blend-mode: screen;
+                }
+            
+            .btn:active {
+                transform: translateY(2px);
+                }
+            
+            .btn {
+                // border: 1px solid white;
+                // border-radius: 4px;
+                position: relative;
+                z-index: 10;
+                color: rgba(0, 0, 0, .4);
+                // padding: 10px;
+                text-align: center;
+                // background: rgba(0, 0, 0, .3);
+                margin: 20px 0px;
+                outline: none;
+                box-shadow: 0 0 10px rgba(0,0,0,.25);
+                transition: all .2s;
+                }
+        
+        
+                button {
+                    background: rgb(209, 209, 247);
+                }
+            input {
+                margin-top: .4em;
+                margin-bottom: 1em;
+                // width: 100%;
+                // border: 1px solid rgba(0, 0, 0, 0.2);
+                // background: rgba(209, 209, 247, 0.15);
+                // box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+            }
+        
+        }
+    }
+
+    
+    .info {
+
+        background: rgba(0, 0, 0, .75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // min-height: 100vh;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        z-index: 10000;
+
+        .content {
+            // margin: 0 20vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: fixed; // real value relative
+            border-radius: 4px;
+            padding: 1.5vw 3.8vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #212121;
+            color: white;
+            height: 70vh;
+            width: 80vw;
+            box-shadow: #00000030 3px 3px 20px 10px;
+            .close {
+                cursor: pointer;
+                position: absolute;
+                top: -.3vw;
+                right: 1.5vw;
+                font-size: 3vw;
+                color: #ffffff40;
+                transition: color 250ms ease-in-out;
+                &:hover {
+                    color: #f5f7fa;
+                }
+            }
+            .text {
+                display: grid;
+                width: calc(100% - 3.8vw);
+                color: #d6caca;
+                h1 {
+                    color: #f72323;
+                    // color: #ff7847;\
+                    // text-shadow: #ff784760 0px 0px 10px;
+                    font-size: 2em;
+                    align-self: center;
+                }
+                p {
+                    text-align: justify;
+                    text-shadow: #000000de 0px 0px 5px;
+                }
+                .spans {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    font-size: .7em;
+                    text-align: center;
+                    align-items: center;
+                    h3 {
+                        // color: #ff5347;
+                        color: #f72323;
+
+                        // text-shadow: #ff534760 0px 0px 10px;
+                        font-size: 1.2em;
+                    }
+                }
+                
+                
+                
+            }
+
+            .people {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-column: 1 / span 2;
+                h3 {
+                    color: #f72323;
+                }
+                p {
+                    align-self: center;
+                    justify-self: center;
+                    font-size: 14px;
+                    color: #d6caca;
+
+                }
+            }
+            .trailer {
+                align-self: end;
+                grid-row: 1;
+                grid-column: 2;
+
+            }
+        }
+    }
+
+    footer {
+        // Udkommenter dette for at få det bag cards'ne
+        // position: relative;
+        // z-index: -10;
+        background-image: url(../img/christmasfooter.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 100%;
+        height: 40rem;
+    
+    }
+
+}
+
+.result {
+    margin: 3vw 10vw 0; // real value 20vw
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em; 
+    .movieCard {
+        position: relative;
+        box-sizing: border-box;
+        max-width: 100%;
+        height: 12vw; // real value 10vw
+        background-position: center;
+        background-size: cover;
+        // margin: 4vh auto; real value
+        border-radius: 4px;
+        box-shadow: 2px 3px 12px rgba(0, 0, 0, .4);
+        color: white;
+        padding: 1vw;
+        // padding: 2vh 3%; real value
+        opacity: .75;
+        transition: all .25s ease-in-out;
+        &:hover {
+        opacity: 1;
+        }
+        h1 {
+            color: white;
+            font-size: 170%;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 1vw;
+        }
+        p {
+            position: relative;
+            z-index: 10;
+            font-size: .8em;
+            width: 60%;
+            height: 35%;
+            margin-bottom: 2vw;
+        }
+        span {
+            display: inline-block;
+            position: relative;
+            z-index: 10;
+            margin-right: 80px;
+            color: rgb(210, 210, 210);
+            bottom: -5vw;
+            left: 25vw;
+          }
+        
+        .btna:hover {
+            background: rgba(255, 255, 255, 1);
+            color: black;
+            box-shadow: 0 0 10px rgba(255,255,255,.5);
+            mix-blend-mode: screen;
+            }
+        .btna:active {
+            transform: translateY(2px);
+            }
+        .btn {
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            background: rgba(0, 0, 0, .3);
+            margin: 20px 0px;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+            transition: all .2s;
+            }
+        .btna {
+            cursor: pointer;
+            top: 1vw;
+            font-size: .7em;
+            border-radius: 4px;
+            position: relative;
+            z-index: 10;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            background: rgba(0, 0, 0, .96);
+            margin: 3px 0px;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+            transition: all .2s;
+        }
+    }
+    .movieCard:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background: linear-gradient(to right, rgba(40,40,60,1) 0%,rgba(40,0,60,0) 90%);
+        background-blend-mode: multiply;
+        will-change: transform;
+        z-index: 0;
+    }
+
+
+
+}
+
+
+
+i {
+  font-size: .7em;
+  color: #ff5b84;
+}
+
+@media (max-width: 500px) {
+  .movieCard {
+    width: 100%;
+  }
+}
