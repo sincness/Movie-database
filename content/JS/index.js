@@ -104,7 +104,7 @@ $('button').addEventListener('click', async function(e) {
     // og lægges ned i 'element' arrow function, til hver af filmene
       data.results.forEach(element => {
       // Oprettelse af elementerne med en variabel som tilgang
-          elm = element;
+          let elm = element;
           card = elemCreate('section')
           title = elemCreate('p')
           average = elemCreate('span')
@@ -238,7 +238,7 @@ async function First() {
     // og lægges ned i 'element' arrow function, til hver af filmene
     data.results.forEach(element => {
     // Element oprettelse
-        elm = element;
+    let elm = element;
         card = elemCreate('section')
         title = elemCreate('p')
         average = elemCreate('span')
