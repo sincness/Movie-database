@@ -39,22 +39,25 @@ async function fetches(mid){
   // Her tilføjes youtube video key fra det nye store objekt - innerHTML funktion tilføjer iframe til trailer-element.
   iH(trailer, `<iframe width="640" height="360" src="https://www.youtube.com/embed/${fdata.videos.results[0].key}" frameborder="0" allow="accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="border-radius:15px; box-shadow: #00000040 1px 1px 10px 0px;"></iframe>`)
 
-  // For loop til at tilføje instruktør og producer
-  for (o = 0; o < fdata.credits.crew.length; o++) {
 
-    // Switchen's expression måles fra objektet's sti med et 'o' fra for loop'et
-        switch (fdata.credits.crew[o].job) {
-          case 'Director':
-              iH(director, '<h3>Director </h3>' + fdata.credits.crew[0].name)
-              aC(people, director)
-            break;
-          case 'Producer':
-              iH(producer, '<h3>Producer </h3>' + fdata.credits.crew[1].name)
-              aC(people, producer)
-            break;
-        }
-        
-      }
+
+  // Her bruger vi en af de nye indbyggede array funktioner med metode filter
+  // den filtrer som lidt gi'r sig selv, det gør den ud fra job.
+  // Det bruger vi istedet for en switch, da det andet ikke kom til rette.
+  let directorPerson = fdata.credits.crew.filter((person) => {
+    if(person.job == 'Director') {return person}
+  })
+  let producerPerson = fdata.credits.crew.filter((person) => {
+    if(person.job == 'Producer') {return person}
+  })
+
+  iH(director, '<h3>Director </h3>' + directorPerson[0].name)
+  aC(people, director)
+  iH(producer, '<h3>Producer </h3>' + producerPerson[0].name)
+  aC(people, producer)
+
+
+ 
       iH(hc1, '<h3>'+fdata.credits.cast[0].character+' </h3>' + fdata.credits.cast[0].name)
       iH(hc2, '<h3>'+fdata.credits.cast[1].character+' </h3>' + fdata.credits.cast[1].name)
       iH(hc3, '<h3>'+fdata.credits.cast[2].character+' </h3>' + fdata.credits.cast[2].name)
