@@ -1,0 +1,81 @@
+body {
+  overflow: hidden;
+}
+
+.div {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  width: 200px;
+  -webkit-animation-name: Santa;
+          animation-name: Santa;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: translateY(500px);
+          transform: translateY(500px);
+  overflow: hidden;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+@-webkit-keyframes Santa {
+  0% {
+  }
+  16% {
+    -webkit-transform: translate(700px, 400px);
+            transform: translate(700px, 400px);
+  }
+  33% {
+    -webkit-transform: translate(800px, 300px) rotate(-90deg);
+            transform: translate(800px, 300px) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(700px, 200px) rotate(-180deg);
+            transform: translate(700px, 200px) rotate(-180deg);
+  }
+  66% {
+    -webkit-transform: translate(600px, 300px) rotate(-270deg);
+            transform: translate(600px, 300px) rotate(-270deg);
+  }
+  83% {
+    -webkit-transform: translate(700px, 400px) rotate(-360deg);
+            transform: translate(700px, 400px) rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: translate(1800px, 300px) rotate(-360deg);
+            transform: translate(1800px, 300px) rotate(-360deg);
+  }
+}
+
+@keyframes Santa {
+  0% {
+  }
+  16% {
+    -webkit-transform: translate(700px, 400px);
+            transform: translate(700px, 400px);
+  }
+  33% {
+    -webkit-transform: translate(800px, 300px) rotate(-90deg);
+            transform: translate(800px, 300px) rotate(-90deg);
+  }
+  50% {
+    -webkit-transform: translate(700px, 200px) rotate(-180deg);
+            transform: translate(700px, 200px) rotate(-180deg);
+  }
+  66% {
+    -webkit-transform: translate(600px, 300px) rotate(-270deg);
+            transform: translate(600px, 300px) rotate(-270deg);
+  }
+  83% {
+    -webkit-transform: translate(700px, 400px) rotate(-360deg);
+            transform: translate(700px, 400px) rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: translate(1800px, 300px) rotate(-360deg);
+            transform: translate(1800px, 300px) rotate(-360deg);
+  }
+}
+/*# sourceMappingURL=test.css.map */
