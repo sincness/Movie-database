@@ -3,20 +3,17 @@ body {
 }
 
 .div {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
+  -webkit-transform: translate(-300px, 500px);
+          transform: translate(-300px, 500px);
   width: 200px;
   -webkit-animation-name: Santa;
           animation-name: Santa;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transform: translateY(500px);
-          transform: translateY(500px);
-  overflow: hidden;
   -webkit-transform-origin: top;
           transform-origin: top;
 }
@@ -24,58 +21,90 @@ body {
 @-webkit-keyframes Santa {
   0% {
   }
-  16% {
+  12% {
     -webkit-transform: translate(700px, 400px);
             transform: translate(700px, 400px);
   }
-  33% {
+  18% {
     -webkit-transform: translate(800px, 300px) rotate(-90deg);
             transform: translate(800px, 300px) rotate(-90deg);
   }
-  50% {
+  24% {
     -webkit-transform: translate(700px, 200px) rotate(-180deg);
             transform: translate(700px, 200px) rotate(-180deg);
   }
-  66% {
+  30% {
     -webkit-transform: translate(600px, 300px) rotate(-270deg);
             transform: translate(600px, 300px) rotate(-270deg);
   }
-  83% {
+  36% {
     -webkit-transform: translate(700px, 400px) rotate(-360deg);
             transform: translate(700px, 400px) rotate(-360deg);
   }
-  100% {
-    -webkit-transform: translate(1800px, 300px) rotate(-360deg);
-            transform: translate(1800px, 300px) rotate(-360deg);
+  44% {
+    -webkit-transform: translate(1500px, 320px) rotate(-370deg);
+            transform: translate(1500px, 320px) rotate(-370deg);
+  }
+  46% {
+    -webkit-transform: translate(1800px, 300px) rotate(-370deg);
+            transform: translate(1800px, 300px) rotate(-370deg);
+  }
+  60% {
+    -webkit-transform: translate(1600px, -600px) scaleX(-1) rotate(45deg);
+            transform: translate(1600px, -600px) scaleX(-1) rotate(45deg);
+  }
+  70% {
+    -webkit-transform: translate(1200px, 200px) scaleX(-1) rotate(10deg);
+            transform: translate(1200px, 200px) scaleX(-1) rotate(10deg);
+  }
+  85% {
+    -webkit-transform: translate(-200px, 350px) scaleX(-1) rotate(0deg);
+            transform: translate(-200px, 350px) scaleX(-1) rotate(0deg);
   }
 }
 
 @keyframes Santa {
   0% {
   }
-  16% {
+  12% {
     -webkit-transform: translate(700px, 400px);
             transform: translate(700px, 400px);
   }
-  33% {
+  18% {
     -webkit-transform: translate(800px, 300px) rotate(-90deg);
             transform: translate(800px, 300px) rotate(-90deg);
   }
-  50% {
+  24% {
     -webkit-transform: translate(700px, 200px) rotate(-180deg);
             transform: translate(700px, 200px) rotate(-180deg);
   }
-  66% {
+  30% {
     -webkit-transform: translate(600px, 300px) rotate(-270deg);
             transform: translate(600px, 300px) rotate(-270deg);
   }
-  83% {
+  36% {
     -webkit-transform: translate(700px, 400px) rotate(-360deg);
             transform: translate(700px, 400px) rotate(-360deg);
   }
-  100% {
-    -webkit-transform: translate(1800px, 300px) rotate(-360deg);
-            transform: translate(1800px, 300px) rotate(-360deg);
+  44% {
+    -webkit-transform: translate(1500px, 320px) rotate(-370deg);
+            transform: translate(1500px, 320px) rotate(-370deg);
+  }
+  46% {
+    -webkit-transform: translate(1800px, 300px) rotate(-370deg);
+            transform: translate(1800px, 300px) rotate(-370deg);
+  }
+  60% {
+    -webkit-transform: translate(1600px, -600px) scaleX(-1) rotate(45deg);
+            transform: translate(1600px, -600px) scaleX(-1) rotate(45deg);
+  }
+  70% {
+    -webkit-transform: translate(1200px, 200px) scaleX(-1) rotate(10deg);
+            transform: translate(1200px, 200px) scaleX(-1) rotate(10deg);
+  }
+  85% {
+    -webkit-transform: translate(-200px, 350px) scaleX(-1) rotate(0deg);
+            transform: translate(-200px, 350px) scaleX(-1) rotate(0deg);
   }
 }
 /*# sourceMappingURL=test.css.map */
