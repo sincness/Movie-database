@@ -1,8 +1,8 @@
 // @font-face {
 //     font-family: 'Trajan Pro';
-//     src: url('../fonts/TrajanPro-Regular.ttf') format('otf');
-//     src: url('../fonts/TrajanPro-Regular.ttf.tff') format('woff');
-//     src: url('../fonts/TrajanPro-Regular.ttf.ttf') format('otf');
+//     src: url('../fonts/TrajanPro-Regular.ttf') format('tff');
+//     src: url('../fonts/TrajanPro-Regular.ttf.tff') format('tff');
+//     src: url('../fonts/TrajanPro-Regular.ttf.ttf') format('tff');
 // }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
@@ -14,11 +14,9 @@
 }
 body {
     min-height: 100vh;
-    min-width: 100vw;
+    // min-width: 100vw;
     background: #fff;
     color: orangered;
-    
-
     background-repeat: no-repeat;
 
     header {
@@ -26,8 +24,8 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 auto;
-        width: 96%;
-        height: 34rem;
+        width: 100%;
+        height: 43rem;
         
         .container {
             position: absolute;
@@ -41,14 +39,13 @@ body {
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
                 outline: none;
-        
             }
             
             .btn:hover {
-                background: rgb(255, 255, 255);
-                color: black;
+                background: #e01b11;
+                color: rgb(255, 255, 255);
                 box-shadow: 0 0 10px rgba(255,255,255,.5);
-                mix-blend-mode: screen;
+                cursor:pointer;
                 }
             
             .btn:active {
@@ -68,11 +65,13 @@ body {
                 outline: none;
                 box-shadow: 0 0 10px rgba(0,0,0,.25);
                 transition: all .2s;
+                color:white;
                 }
         
         
                 button {
-                    background: rgb(209, 209, 247);
+                    background: #ac0800;
+
                 }
             input {
                 margin-top: .4em;
@@ -82,7 +81,6 @@ body {
                 // background: rgba(209, 209, 247, 0.15);
                 // box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
             }
-        
         }
     }
 
@@ -93,7 +91,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 100vw;
+        width: 100%;
         // min-height: 100vh;
         display: grid;
         justify-items: center;
@@ -151,14 +149,10 @@ body {
                     h3 {
                         // color: #ff5347;
                         color: #f72323;
-
                         // text-shadow: #ff534760 0px 0px 10px;
                         font-size: 1.2em;
                     }
-                }
-                
-                
-                
+                }           
             }
 
             .people {
@@ -173,14 +167,12 @@ body {
                     justify-self: center;
                     font-size: 14px;
                     color: #d6caca;
-
                 }
             }
             .trailer {
                 align-self: end;
                 grid-row: 1;
                 grid-column: 2;
-
             }
         }
     }
@@ -190,18 +182,16 @@ body {
         // position: relative;
         // z-index: -10;
         background-image: url(../img/christmasfooter.svg);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         margin: 0 auto;
         width: 100%;
-        height: 34rem;
-    
+        height: 40rem;
     }
-
 }
 
 .result {
-    margin: 0 10vw; // real value 20vw
+    margin: 3vw 10vw 0; // real value 20vw
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em; 
@@ -222,6 +212,7 @@ body {
         transition: all .25s ease-in-out;
         &:hover {
         opacity: 1;
+        cursor:pointer;
         }
         h1 {
             color: white;
@@ -247,7 +238,6 @@ body {
             bottom: -5vw;
             left: 25vw;
           }
-        
         .btna:hover {
             background: rgba(255, 255, 255, 1);
             color: black;
@@ -301,12 +291,7 @@ body {
         will-change: transform;
         z-index: 0;
     }
-
-
-
 }
-
-
 
 i {
   font-size: .7em;
